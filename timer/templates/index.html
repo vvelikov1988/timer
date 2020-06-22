@@ -5,11 +5,12 @@
       <title>Index</title>
       {% load static %}
       <link rel="stylesheet" href="{% static 'css/style.css' %}">    
-      <script src="{% static 'js/times.js' %}"></script>
+      <!-- <script defer src="{% static 'js/times.js' %}"></script> -->
     </head>
     <body>
         <h1>The current time is {{time}}</h1>
-        <p>The current time is <script src="{% static 'js/times.js' %}"></script>
+        <p>The current time is <span id= "timer"></span>
+            
         </p>
-
+        <script src="{% static 'js/times.js' %}"></script>
     </body>
